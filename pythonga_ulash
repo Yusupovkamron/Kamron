@@ -1,0 +1,18 @@
+import psycopg2
+db-data = {
+    'dbname': 'postgers',
+    'user' : 'postgers',
+    'hors' : 'localhost',
+    'port' : 5432,
+    'password' : 26042604
+
+}
+conn = psycopg2.conect(**db_data)
+curr = conn.cursor()
+
+
+
+curr.execute("CREATE TABLE cars_models(id int, model carchar(20):")
+
+# curr.execute("""
+#     insurt into cars_models""")
